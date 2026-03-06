@@ -6,11 +6,11 @@ from .proxmox import getContainers, createTarget
 main = Blueprint("main", __name__)
 logger = logging.getLogger(__name__)
 
-classes_path = "app/data/classes.json"
+projects_path = "app/data/projects.json"
 
 @main.route('/')
 def index():
-    with open(classes_path, 'r') as file:
+    with open(projects_path, 'r') as file:
         data = json.load(file)
     return render_template('index.html', navtab="home", data=data)
 
