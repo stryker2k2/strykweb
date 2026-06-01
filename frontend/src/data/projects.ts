@@ -9,7 +9,7 @@ export const projects: Project[] = [
     game: 'World of Warcraft',
     downloadUrl: '/downloads/StryksEmoteWheel-1.1.1.zip',
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
-    tags: ['Retail', 'Classic Era', 'TBC', 'MoP Classic', 'UI', 'Emote'],
+    tags: ['Retail (12.0.5)', 'Classic Era (1.15.8)', 'TBC (2.5.5)', 'MoP Classic (5.5.3)'],
     releaseDate: '2026-05-08',
     icon: '/images/emote_wheel/icon_512.png',
     screenshots: [
@@ -28,7 +28,7 @@ export const projects: Project[] = [
     game: 'World of Warcraft (Custom Servers)',
     downloadUrl: '/downloads/StryksEmoteWheel-custom-1.0.0.zip',
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
-    tags: ['Custom Servers', 'Turtle WoW', 'UI', 'Emote'],
+    tags: ['Turtle WoW (1.18.1)'],
     releaseDate: '2026-05-08',
     icon: '/images/emote_wheel/icon_512.png',
     screenshots: [
