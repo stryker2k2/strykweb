@@ -6,9 +6,9 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <span className="text-amber-400 font-bold text-xl tracking-wide">
+        <a href="#" className="text-amber-400 font-bold text-xl tracking-wide hover:text-amber-300 transition-colors">
           STRYKERSOFT
-        </span>
+        </a>
 
         <nav className="hidden md:flex gap-8 text-sm text-gray-400">
           <a href="#projects" className="hover:text-amber-400 transition-colors">Projects</a>
