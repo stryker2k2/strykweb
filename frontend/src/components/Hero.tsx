@@ -7,14 +7,14 @@ export default function Hero() {
 
       <div className="relative max-w-6xl mx-auto text-center">
         <p className="text-amber-400 text-sm font-semibold tracking-widest uppercase mb-4">
-          WoW Addon Developer
+          stryker2k2
         </p>
         <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Free tools, built for<br />
-          <span className="text-amber-400">Azeroth and beyond</span>
+          Tools and addons crafted<br />
+          <span className="text-amber-400">for World of Warcraft</span>
         </h1>
         <p className="text-gray-400 text-lg max-w-xl mx-auto mb-10">
-          Open source addons and projects — free to download, free to fork.
+          Free to download, built to last.
         </p>
         <a
           href="#projects"
