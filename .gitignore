@@ -8,6 +8,8 @@ downloads/*.zip
 downloads/*.tar.gz
 downloads/*.toc
 
+logs/
+
 .env
 .env.local
 .DS_Store
