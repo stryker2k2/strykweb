@@ -8,4 +8,6 @@ export interface Project {
   githubUrl?: string
   tags: string[]
   releaseDate: string
+  icon?: string
+  screenshots?: string[]
 }
