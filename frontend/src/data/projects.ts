@@ -8,7 +8,7 @@ export const projects: Project[] = [
     version: '1.1.1',
     game: 'World of Warcraft',
     downloadUrl: '/downloads/StryksEmoteWheel-1.1.1.zip',
-    githubUrl: 'https://github.com/stryker2k2/emote_wheel',
+    curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
     tags: ['Retail', 'Classic Era', 'TBC', 'MoP Classic', 'UI', 'Emote'],
     releaseDate: '2026-05-08',
     icon: '/images/emote_wheel/icon_512.png',

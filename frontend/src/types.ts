@@ -6,6 +6,7 @@ export interface Project {
   game?: string
   downloadUrl: string
   githubUrl?: string
+  curseforgeUrl?: string
   tags: string[]
   releaseDate: string
   icon?: string

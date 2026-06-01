@@ -98,6 +98,16 @@ export default function ProjectCard({ project }: Props) {
             </svg>
             Download
           </a>
+          {project.curseforgeUrl && (
+            <a
+              href={project.curseforgeUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-3 py-2.5 border border-gray-700 hover:border-orange-500 text-gray-400 hover:text-orange-400 rounded-lg transition-colors text-sm font-medium"
+            >
+              CurseForge
+            </a>
+          )}
           {project.githubUrl && (
             <a
               href={project.githubUrl}
