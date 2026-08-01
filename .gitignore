@@ -4,9 +4,9 @@ frontend/dist/
 certbot/conf/
 certbot/www/
 
-downloads/*.zip
-downloads/*.tar.gz
-downloads/*.toc
+dist/*/*.zip
+dist/*/*.tar.gz
+dist/*/*.toc
 
 logs/
 

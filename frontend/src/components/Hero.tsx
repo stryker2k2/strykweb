@@ -1,19 +1,16 @@
 export default function Hero() {
   return (
-    <section className="relative py-28 px-4 overflow-hidden">
+    <section className="relative py-16 px-4 overflow-hidden">
       {/* Background glow */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-950/40 via-gray-950 to-gray-950 pointer-events-none" />
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[350px] bg-purple-900/20 blur-3xl rounded-full pointer-events-none" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[280px] bg-purple-900/20 blur-3xl rounded-full pointer-events-none" />
 
       <div className="relative max-w-6xl mx-auto text-center">
-        <p className="text-amber-400 text-sm font-semibold tracking-widest uppercase mb-4">
-          stryker2k2
-        </p>
-        <h1 className="text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
-          Tools and addons crafted<br />
-          <span className="text-amber-400">for World of Warcraft</span>
+        <h1 className="text-5xl md:text-6xl font-bold text-white mb-5 leading-tight">
+          Addons for Warcraft<br />
+          <span className="text-amber-400">Wherever You Play It</span>
         </h1>
-        <p className="text-gray-400 text-lg max-w-xl mx-auto mb-10">
+        <p className="text-gray-400 text-lg max-w-xl mx-auto mb-8">
           Free to download, built to last.
         </p>
         <a
