@@ -4,12 +4,13 @@ frontend/dist/
 certbot/conf/
 certbot/www/
 
-dist/*/*.zip
-dist/*/*.tar.gz
-dist/*/*.toc
+/dist
 
 logs/
 
 .env
 .env.local
 .DS_Store
+
+CLOUDFLARE.md
+dashboard.html
