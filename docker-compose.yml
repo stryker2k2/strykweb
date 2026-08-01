@@ -13,6 +13,15 @@ services:
       - ./dist:/var/www/dist:ro
       - ./logs:/var/log/nginx
 
+  api:
+    image: node:20-alpine
+    restart: unless-stopped
+    working_dir: /app
+    volumes:
+      - ./server:/app:ro
+      - ./data:/data
+    command: node index.js
+
   certbot:
     image: certbot/certbot:latest
     restart: unless-stopped

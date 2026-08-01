@@ -33,6 +33,15 @@ export default function About() {
             u/stryker2k2
           </a>
         </div>
+
+        <div className="mt-12">
+          <a
+            href="#top"
+            className="inline-flex items-center gap-2 bg-amber-500 hover:bg-amber-400 active:bg-amber-600 text-gray-950 font-semibold px-7 py-3 rounded-lg transition-colors"
+          >
+            Back to Top
+          </a>
+        </div>
       </div>
     </section>
   )

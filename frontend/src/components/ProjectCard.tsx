@@ -3,9 +3,11 @@ import type { Project } from '../types'
 
 interface Props {
   project: Project
+  downloadCount: number
+  onDownload: () => void
 }
 
-export default function ProjectCard({ project }: Props) {
+export default function ProjectCard({ project, downloadCount, onDownload }: Props) {
   const [activeShot, setActiveShot] = useState(0)
   const shots = project.screenshots ?? []
 
@@ -91,6 +93,7 @@ export default function ProjectCard({ project }: Props) {
           <a
             href={project.downloadUrl}
             download
+            onClick={onDownload}
             className="flex-1 flex items-center justify-center gap-2 bg-amber-500 hover:bg-amber-400 active:bg-amber-600 text-gray-950 font-semibold text-sm py-2.5 rounded-lg transition-colors"
           >
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
@@ -119,6 +122,10 @@ export default function ProjectCard({ project }: Props) {
             </a>
           )}
         </div>
+
+        <p className="text-center text-xs text-gray-600">
+          Downloaded {downloadCount.toLocaleString()} {downloadCount === 1 ? 'time' : 'times'}
+        </p>
       </div>
     </article>
   )
