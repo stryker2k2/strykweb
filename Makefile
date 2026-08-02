@@ -1,4 +1,4 @@
-.PHONY: dev build lint up down logs cert-init
+.PHONY: dev build lint up down logs cert-init archive-logs
 
 dev:
 	cd frontend && npm run dev
@@ -21,3 +21,6 @@ logs:
 
 cert-init:
 	bash scripts/cert-init.sh
+
+archive-logs:
+	bash scripts/archive-logs.sh
