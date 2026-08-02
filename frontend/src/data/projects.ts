@@ -23,9 +23,9 @@ export const projects: Project[] = [
   {
     id: 'stryks-emote-wheel-custom',
     name: "Stryk's Emote Wheel",
-    description: 'The custom server edition of Stryk\'s Emote Wheel — same 12-slice radial menu and full feature set, built for private/custom WoW servers that don\'t use Blizzard\'s official client.',
+    description: 'The custom server edition of Stryk\'s Emote Wheel — same 12-slice radial menu and full feature set, built for Turtle WoW and Turtle WoW inspired private servers.',
     version: '1.0.1',
-    game: 'Turtle WoW Clones',
+    game: 'Turtle WoW & Inspired Servers',
     downloadUrl: '/dist/capybara/StryksEmoteWheel-1.0.1.zip',
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
     tags: ['Turtle WoW (1.18.1)', 'Capybara (1.18.1)'],
