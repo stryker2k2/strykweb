@@ -6,8 +6,8 @@ certbot/www/
 
 /dist
 
-logs/
-data/
+/logs/
+/data/
 
 .env
 .env.local
