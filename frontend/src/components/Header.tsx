@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from '../lib/router'
 
 export default function Header() {
   const [open, setOpen] = useState(false)
@@ -6,13 +7,14 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="#" className="text-amber-400 font-bold text-xl tracking-wide hover:text-amber-300 transition-colors">
+        <Link to="/" className="text-amber-400 font-bold text-xl tracking-wide hover:text-amber-300 transition-colors">
           STRYKERSOFT
-        </a>
+        </Link>
 
         <nav className="hidden md:flex gap-8 text-sm text-gray-400">
-          <a href="#projects" className="hover:text-amber-400 transition-colors">Projects</a>
-          <a href="#about" className="hover:text-amber-400 transition-colors">About</a>
+          <Link to="/#projects" className="hover:text-amber-400 transition-colors">Projects</Link>
+          <Link to="/#about" className="hover:text-amber-400 transition-colors">About</Link>
+          <Link to="/disclaimer" className="hover:text-amber-400 transition-colors">Disclaimer</Link>
         </nav>
 
         <button
@@ -30,8 +32,9 @@ export default function Header() {
 
       {open && (
         <div className="md:hidden bg-gray-900 border-b border-gray-800 px-4 py-4 flex flex-col gap-4 text-sm text-gray-400">
-          <a href="#projects" className="hover:text-amber-400 transition-colors" onClick={() => setOpen(false)}>Projects</a>
-          <a href="#about" className="hover:text-amber-400 transition-colors" onClick={() => setOpen(false)}>About</a>
+          <Link to="/#projects" className="hover:text-amber-400 transition-colors" onClick={() => setOpen(false)}>Projects</Link>
+          <Link to="/#about" className="hover:text-amber-400 transition-colors" onClick={() => setOpen(false)}>About</Link>
+          <Link to="/disclaimer" className="hover:text-amber-400 transition-colors" onClick={() => setOpen(false)}>Disclaimer</Link>
         </div>
       )}
     </header>
