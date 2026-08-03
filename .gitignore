@@ -15,3 +15,5 @@ certbot/www/
 
 CLOUDFLARE.md
 dashboard.html
+
+/.claude/
