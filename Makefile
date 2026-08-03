@@ -1,4 +1,4 @@
-.PHONY: dev build lint up down logs cert-init archive-logs
+.PHONY: dev build lint up down logs cert-init archive-logs banlist
 
 dev:
 	cd frontend && npm run dev
@@ -24,3 +24,6 @@ cert-init:
 
 archive-logs:
 	bash scripts/archive-logs.sh
+
+banlist:
+	bash scripts/banlist.sh
