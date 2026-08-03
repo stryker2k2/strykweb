@@ -59,21 +59,23 @@ export default function ProjectCard({ project, downloadCount, onDownload }: Prop
 
       <div className="flex flex-col gap-4 p-6 flex-1">
         {/* Header */}
-        <div className="flex items-start justify-between gap-3">
-          <div className="flex items-center gap-3">
-            {project.icon && (
-              <img src={project.icon} alt={`${project.name} icon`} className="w-10 h-10 rounded-lg shrink-0" />
-            )}
-            <div>
-              <h3 className="text-white font-semibold text-lg leading-tight">{project.name}</h3>
-              {project.game && (
-                <span className="text-xs text-purple-400 font-medium">{project.game}</span>
-              )}
+        <div className="flex flex-col gap-3">
+          {project.icon && (
+            <div className="flex justify-center">
+              <img src={project.icon} alt={`${project.name} icon`} className="h-24 w-auto" />
             </div>
+          )}
+          <div className="flex flex-col items-center gap-1 text-center">
+            <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-1">
+              <h3 className="text-white font-semibold text-lg leading-tight">{project.name}</h3>
+              <span className="shrink-0 text-[11px] text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-full font-mono">
+                v{project.version}
+              </span>
+            </div>
+            {project.game && (
+              <span className="text-xs text-purple-400 font-medium">{project.game}</span>
+            )}
           </div>
-          <span className="shrink-0 text-xs text-gray-500 bg-gray-800 px-2 py-1 rounded font-mono">
-            v{project.version}
-          </span>
         </div>
 
         <p className="text-gray-400 text-sm flex-1 leading-relaxed">{project.description}</p>

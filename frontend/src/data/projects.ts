@@ -11,7 +11,7 @@ export const projects: Project[] = [
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
     tags: ['Retail (12.0.5)', 'Classic Era (1.15.8)', 'TBC (2.5.5)', 'MoP Classic (5.5.3)'],
     releaseDate: '2026-05-08',
-    icon: '/images/emote_wheel/icon_512.png',
+    icon: '/images/logos/blizzard_logo.png',
     screenshots: [
       '/images/emote_wheel/screenshot_001.png',
       '/images/emote_wheel/screenshot_002.png',
@@ -30,7 +30,7 @@ export const projects: Project[] = [
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
     tags: ['Turtle WoW (1.18.1)', 'Capybara (1.18.1)'],
     releaseDate: '2026-05-08',
-    icon: '/images/emote_wheel/icon_512.png',
+    icon: '/images/logos/twow_logo.png',
     screenshots: [
       '/images/emote_wheel/custom_001.png',
     ],
@@ -45,7 +45,7 @@ export const projects: Project[] = [
     curseforgeUrl: 'https://www.curseforge.com/wow/addons/stryks-emote-wheel',
     tags: ['Project Ascension (3.3.5a)'],
     releaseDate: '2026-08-01',
-    icon: '/images/emote_wheel/icon_512.png',
+    icon: '/images/logos/ascension_logo.png',
     screenshots: [
       '/images/emote_wheel/ascension_001.png',
     ],
