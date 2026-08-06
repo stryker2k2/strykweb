@@ -1,4 +1,4 @@
-.PHONY: dev build lint up down logs cert-init archive-logs banlist
+.PHONY: dev build lint up down logs cert-init archive-logs banlist favicon
 
 dev:
 	cd frontend && npm run dev
@@ -27,3 +27,6 @@ archive-logs:
 
 banlist:
 	bash scripts/banlist.sh
+
+favicon:
+	python3 scripts/make-favicon.py $(SRC) frontend/public/favicon.ico

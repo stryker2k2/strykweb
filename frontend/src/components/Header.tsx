@@ -7,7 +7,8 @@ export default function Header() {
   return (
     <header className="sticky top-0 z-50 bg-gray-950/90 backdrop-blur border-b border-gray-800">
       <div className="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
-        <Link to="/" className="text-amber-400 font-bold text-xl tracking-wide hover:text-amber-300 transition-colors">
+        <Link to="/" className="flex items-center gap-2 text-amber-400 font-bold text-xl tracking-wide hover:text-amber-300 transition-colors">
+          <img src="/icons/sew_fire_round_icon.png" alt="" className="w-8 h-8" />
           STRYKERSOFT
         </Link>
 
