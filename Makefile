@@ -1,4 +1,4 @@
-.PHONY: dev build lint up down logs cert-init archive-logs banlist favicon
+.PHONY: dev build lint up down logs cert-init archive-logs banlist favicon update-versions
 
 dev:
 	cd frontend && npm run dev
@@ -30,3 +30,6 @@ banlist:
 
 favicon:
 	python3 scripts/make-favicon.py $(SRC) frontend/public/favicon.ico
+
+update-versions:
+	python3 scripts/update-project-versions.py

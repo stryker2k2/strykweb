@@ -7,6 +7,22 @@ interface Props {
   onDownload: () => void
 }
 
+function formatRelativeDate(dateStr: string): string {
+  const [year, month, day] = dateStr.split('-').map(Number)
+  const releaseUTC = Date.UTC(year, month - 1, day)
+  const now = new Date()
+  const todayUTC = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate())
+  const diffDays = Math.round((todayUTC - releaseUTC) / 86_400_000)
+
+  if (diffDays <= 0) return 'today'
+  if (diffDays === 1) return 'yesterday'
+  if (diffDays < 30) return `${diffDays} days ago`
+  const diffMonths = Math.floor(diffDays / 30)
+  if (diffMonths < 12) return `${diffMonths} month${diffMonths > 1 ? 's' : ''} ago`
+  const diffYears = Math.floor(diffMonths / 12)
+  return `${diffYears} year${diffYears > 1 ? 's' : ''} ago`
+}
+
 export default function ProjectCard({ project, downloadCount, onDownload }: Props) {
   const [activeShot, setActiveShot] = useState(0)
   const shots = project.screenshots ?? []
@@ -126,6 +142,8 @@ export default function ProjectCard({ project, downloadCount, onDownload }: Prop
         </div>
 
         <p className="text-center text-xs text-gray-600">
+          Last updated {formatRelativeDate(project.releaseDate)}
+          <br />
           Downloaded {downloadCount.toLocaleString()} {downloadCount === 1 ? 'time' : 'times'}
         </p>
       </div>
