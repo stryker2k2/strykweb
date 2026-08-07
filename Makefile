@@ -1,6 +1,6 @@
-.PHONY: dev build lint up down logs cert-init archive-logs banlist favicon update-versions
+.PHONY: dev build lint up down logs cert-init archive-logs banlist favicon update-versions fix-permissions
 
-dev:
+dev: fix-permissions
 	cd frontend && npm run dev
 
 build:
@@ -33,3 +33,6 @@ favicon:
 
 update-versions:
 	python3 scripts/update-project-versions.py
+
+fix-permissions:
+	bash scripts/fix-public-permissions.sh

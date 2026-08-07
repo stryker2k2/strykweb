@@ -17,6 +17,7 @@ services:
     image: node:20-alpine
     restart: unless-stopped
     working_dir: /app
+    user: "1000:1000"
     volumes:
       - ./server:/app:ro
       - ./data:/data
