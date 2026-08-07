@@ -13,6 +13,7 @@ export const projects: Project[] = [
     releaseDate: '2026-08-07',
     icon: '/images/logos/blizzard_logo.png',
     screenshots: [
+      '/gifs/blizzard/blizzard_001.gif',
       '/images/emote_wheel/screenshot_001.png',
       '/images/emote_wheel/screenshot_002.png',
       '/images/emote_wheel/screenshot_003.png',
